@@ -349,3 +349,5 @@ def test_plot_roc_curve():
     assert np.array_equal(
         result_perfect["fpr"], [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     ), "FPR for perfect predictions is incorrect."
+
+test_minkowski_distance()
