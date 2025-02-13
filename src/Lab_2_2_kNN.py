@@ -118,6 +118,7 @@ class knn:
             if len(counts) == 1:
                 counts.append(0)
             predict.append(counts)
+        print(predict)
         return np.array(predict)
 
     def compute_distances(self, point: np.ndarray) -> np.ndarray:
