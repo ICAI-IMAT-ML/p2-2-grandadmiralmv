@@ -115,6 +115,8 @@ class knn:
                 for j in labels:
                     if j == i:
                         labels.remove(i)
+            if len(counts) == 1:
+                counts.append(0)
             predict.append(counts)
         return np.array(predict)
 
